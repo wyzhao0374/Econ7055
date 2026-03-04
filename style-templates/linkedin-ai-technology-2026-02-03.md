@@ -1,289 +1,530 @@
 # LinkedIn Style Reference - AI & Economics
 
 ## Article 1
-Don’t be the person who gets caught producing terrible AI output. 
+Quiet people don't win.
 
-Instead, steal 1 of these 8 frameworks: 
+I hate that, but it's true.
 
-This is where you should start with AI:
-Mastering the art of prompting.
+Look around at who's getting all of the opportunities, the clients, and the attention on social media.
 
-Prompting basic questions will get you basic answers.
-Honestly, it is a misuse of insanely valuable technology.
+I guarantee you that most of the people with the biggest followings aren't the most talented people around.
 
-My team and I have learned this deeply as a skill.
+They're the hand-raisers.
+The people who post the thing.
+The guys and gals who send the DMs.
 
-The results are amazing:
+The world doesn't reward you for having the best-kept secret.
 
-- Streamlined and optimised operations.
-- Tasks are being automated, freeing up time.
-- Therefore, more time spent on truly valuable tasks.
+And if you think your work will speak for itself? Think again.
 
-These are the 8 prompt frameworks I use to power my businesses:
+Will someone notice if you just keep your head down? Probably not.
 
-1️⃣ R-T-F
-Role: Specify the role you want the AI to assume.
-Task: Define the task you want the AI to perform.
-Format: Indicate the format in which you want the output.
+The facts are:
 
-2️⃣ S-O-L-V-E
-Situation: Define the context or situation.
-Objective: Specify the goals.
-Limits: Define any limitations or constraints.
-Vision: Outline the vision or goal.
-Execution: Plan the steps for execution.
+The people winning aren't smarter than you.
+They're probably not more qualified.
+They may not even have better ideas.
 
-3️⃣ T-A-G
-Task: Define the task at hand.
-Action: State the action needed.
-Goal: Clarify the goal to be achieved.
+They just decided to speak up.
 
-4️⃣ R-A-C-E
-Role: Specify the character you want the AI to play.
-Action: State the basic instruction or the job you need to be done.
-Context: Provide the background information the AI will need.
-Expectation: Describe the outcome you need.
+They got over the cringe of being public.
 
-5️⃣ D-R-E-A-M
-Define: Define the problem or context.
-Research: State the research needed.
-Execute: How to execute the plan.
-Analyse: How to analyse the results.
-Measure: Define how to measure the outcomes.
+They stopped waiting for someone to hand them a mic.
 
-6️⃣ P-A-C-T
-Problem: Define the problem.
-Approach: Describe the approach.
-Checks: Write about potential compromises.
-Test: Define the test or measurement.
+They started acting like they belonged in the conversation.
 
-7️⃣ C-A-R-E
-Context: Give the context.
-Action: Describe the action needed.
-Result: Clarify the expected result.
-Example: Provide an example for clarity.
+And guess what?
 
-8️⃣ R-I-S-E
-Role: Specify the role.
-Input: Describe the input needed.
-Steps: Could you ask for steps to follow?
-Expectation: Describe the expectation.
+It never stops feeling a little weird.
+You just get used to it.
 
-AI is the single biggest source of leverage across all my businesses.
-But we couldn't have achieved any of it without learning how to prompt.
+You realize that staying invisible is a choice with consequences.
 
-If you spend 1-2 hours scrolling on Instagram per day...
-I know you have time to learn these prompting techniques.
+So if you're sitting on some expertise, ideas, or a business you believe in, please stop hiding it.
 
-My newsletter shares resources like this, every single week.
+The world isn't coming to find you.
 
-There is always something you can apply the exact same day.
+You have to go find the world.
 
-Sign up now and join 250k reading weekly: https://lnkd.in/eUTCQTWb
+That's exactly what The Expert OS does for you.
 
-I also have 30+ free learning resources for you.
+It's a (free) 30-day challenge where you'll put yourself out there, build a small profitable offer based on your skills, and sell it.
 
-Which prompting technique will you try first? 
-Let me know how it goes in the comments.
+In 30 days, you'll have your first paying customer.
 
-♻️ Repost to help your network learn vital AI skills. 
-And follow Chris Donnelly for more on leveraging AI in 2026.
+It includes:
 
+- My emails
+- My templates
+- My landing page
+- My automations
+- My AI prompts for ease
+
+Start here: https://buff.ly/HdEvVii 
+
+Your expertise deserves an audience. 
+
+Go get one.
 ---
 
 ## Article 2
-There is a reason everyone is talking about Claude Code.
-It is the most powerful AI tool available.
-This is the full breakdown you need to understand it:
+One steady paycheck is not a great plan.
 
-You now no longer need to know coding to code.
+I know that nobody wants to hear that.
 
-You don't need to write the code; you just manage the agents that write it.
+But it's true.
 
-People are building some incredible apps and websites using it in a couple of hours max.
+One job is no longer a safety net.
+It's a single point of failure.
 
-Which is pretty crazy, all things considered. Yet another seismic moment.
+One new CEO.
+One bad quarter.
+One round of layoffs.
+One AI tool that does your job faster.
 
-However, if you don't know where to start, it can be a tiny bit confusing. 
+And suddenly, the "stable" path isn't so stable anymore.
 
-Which is why I've created this all-in-one guide,
-Aiming to get you up to speed in just a couple of minutes:
+I watched this happen to hundreds of people on my team back in 2019 when I had to let go of a lot of close friends of mine.
 
-(Save this sheet for when you come to test Claude Code !)
+They were smart, talented people who did everything right.
 
-So, what is Claude Code? 🧑🏻‍💻
+They showed up early.
+They hit their numbers.
+They ate up the culture.
 
-It's a command-line tool built by Anthropic that sits inside your terminal and works across your entire workflow.
+Then the board had a change of heart and one Friday afternoon, I had to make all the calls.
 
-Anthropic's Claude Code Beginner Guide: https://lnkd.in/eB5N3mx7
+The scariest part is that 90% of them had no backup plan.
 
-Next, what is the optimal workflow? 🔀
+No small audience.
+No side income.
+No leverage.
 
-This is the flow that works best:
+They'd spent 5+ years helping us build a machine and suddenly they went from $150K to $0 overnight.
 
-Start in plan mode (Shift+Tab twice)
-↓
-Write your goal clearly
-↓
-Let Claude break it into steps
-↓
-Review & iterate the plan
-↓
-Switch to auto-accept edits mode
-↓
-Claude executes the plan end-to-end
-↓
-Review output → Refine if needed
+Listen - I'm not saying quit your job tomorrow. Please don't do that.
 
-The key is a good plan. Without that, you'll get tons of revision rounds.
+I'm saying stop pretending that your paycheck is guaranteed forever.
 
-The Claude Code Creator's (Boris Cherny) Setup: https://lnkd.in/e8JF3ca7
+Start building something (literally anything) on the side.
 
-But what can you actually use Claude Code for as a founder? 💻
+An audience.
+A small offer.
+An in-demand skill.
+Anything that's yours.
 
-1. Synthesise customer feedback
-2. Draft documents & presentations
-3. Build code & prototypes
-4. Research & competitive analysis
-5. Automate repetitive workflows
-6. Create reusable skills
+Not because you hate your job. You probably love it.
 
-Plus many more. Like I said, people are building full websites and apps with this.
+Because you deserve options.
 
-50 Ways Non-Technical People Are Using Claude Code: https://lnkd.in/ebK25X6M
+And options come from building, not from waiting.
 
-What are the Power Features worth knowing about? 📲
+I write about this every Saturday for 180,000+ entrepreneurs.
 
-1. MCP (Model Context Protocol)
-This is like a USB-C for AI - one interface for your entire tool stack.
+How to rethink money, time, and living well in the modern age.
 
-2. Skills (Reusable Automations)
-These are task-specific instruction packages Claude auto-loads when relevant.
+Join my email list, and I'll send you my 2026 LinkedIn Growth Guide for free, instantly.
 
-3. CLAUDE .md (Project Memory)
-A markdown file that gives Claude permanent context about your project.
+Sign up here: https://buff.ly/t4J7aFD
 
-Connect Claude Code To Tools Via MCP Guide: https://lnkd.in/epQbcNst
-Extend Claude With Skills Guide: https://lnkd.in/en_jt5sg
-Writing a good CLAUDE .md File Guide: https://lnkd.in/e_UttjWa
+1. Read the guide
+2. Build the audience
+3. Start something you own
 
-And finally, you can find some useful dos and don'ts in the sheet below.
+See you inside.
 
-With all of that covered, you should be good to start building.
-
-If you're planning on doing so, let me know in the comments.
-I will try and guide you in the right direction !
-
-For more on building using AI, you'll want to read my newsletter, Step by Step:
-https://lnkd.in/eUTCQTWb
-
-💾 Save and repost this so your network sees this.
-And follow Chris Donnelly for more like this.
 
 ---
 
 ## Article 3
-AI Agents and Agentic AI are not the same thing. 
+You don't need permission to grab the mic and earn some attention.
 
-Your competitors already know the difference: 
+Nobody is going to come to you and say:
 
-There are actually 3 major types of AI workflows you need to know.
+"Ok, you're qualified now. Time to start writing about it."
 
-Each one fills a slightly different gap in your business. 
+There's no certification, or perfect process, or follower count number that you need to start.
 
-But be warned: the window is narrowing. 
+But everyone acts like there is.
 
-Your competitors are already using them to automate their businesses. 
+They start building an offer.
+They work on a beautiful website.
+They ask a million people about their "niche."
 
-Here's how they differ (and how to use them properly): 
+And the whole time they've got nobody paying attention.
 
-🤖 Non-Agentic AI
-↳ Basic prompt-response AI with no memory/reasoning. 
+Here's what I wish someone told me way back in 2015:
 
-⚙️ How it works:
+Attention comes before the offer. 
+Not after.
 
-- User types a single prompt, model processes 
-- Generates a direct response immediately 
-- Interaction ends with no context retention
+Please don't spend 6 months building a product in silence. 
 
-✅ Pros:
-↳ Fast, cheap, and universally accessible
-↳ Requires no technical build or integration
-↳ Great for clear, one-off tasks
+You'll waste your time, launch, and wonder why nobody bought.
 
-🚫 Cons:
-↳ No reasoning or context awareness
-↳ Quality depends heavily on prompts
-↳ Struggles with multi-step work
+Not sure how to start?
 
-📈 How to build fast:
-↳ Open ChatGPT, Claude, or Gemini
-↳ Write clear, specific prompts with context
-↳ Copy output, edit as needed, and repeat
+Here's an idea I like in 2026:
 
-🧠 Agentic AI
-↳ A self-managing AI system that can plan and execute. 
+Don't try to be "helpful." 
+Everyone's trying to be helpful.
+It's turning into noise nowadays.
 
-⚙️ How it works:
+Try being specific about what irritates you about your industry.
 
-- The system breaks your goal into sub-tasks
-- Connects to tools, APIs, data sources 
-- Evaluates results with feedback loops
+1. Write down 10 things that annoy you.
 
-✅ Pros:
-↳ Handles complex, changing projects 
-↳ Can integrate with tools and databases
-↳ Produces more reliable outcomes 
+The outdated advice.
+The "best practices" that don't work.
+The stuff everyone is thinking but nobody talks about.
 
-🚫 Cons:
-↳ Slower and more expensive than agents
-↳ Requires human oversight and guardrails
-↳ Risk of overbuilding for simple problems
+2. Turn each one into a post. 
 
-📈 How to build fast:
-↳ Start with a code-native LLM like Claude Code
-↳ Give structured goals, constraints, & acceptance criteria
-↳ Add an execution loop and persist memory
+Not a tip. 
+A strong opinion.
 
-⚡ AI Agent
-↳ Single-task AI worker designed to automate one task.
+3. Post 3x a week for 90 days. 
 
-⚙️ How it works:
+Don't sell anything. 
+Just be active and loud.
 
-- User defines one clear responsibility
-- Agent receives inputs, accesses connected tools
-- Executes and outputs without guidance
+4. Reply to 10 people in your space every day. 
 
-✅ Pros:
-↳ Automates repetitive, time-consuming tasks
-↳ Quick setup and cost-efficient
-↳ Easy to test and refine within roles
+Give a contrarian take.
+Challenge people politely.
+Add your two cents from experience.
 
-🚫 Cons:
-↳ It can't handle broader projects 
-↳ Breaks if inputs are unclear or data is missing
-↳ Needs orchestration to work alongside other agents
+5. DM 5 people per week who engage with your stuff. 
 
-📈 How to build fast:
-↳ Define one clear outcome with measurable success criteria
-↳ Connect the agent to structured inputs (e.g. CRM)
-↳ Use worfklow tools like Zapier, MNake, or n8n
+Don't pitch.
+Just connect like a person.
 
-TL;DR: 
+After 90 days, you'll have something most people never, ever get:
 
-AI Agents perform single-task automation. 
-Agentic AI is for multi-step problem solving. 
+People who actually pay attention to you.
 
-Dominant businesses have graduated to building these AI systems. 
+And when you finally have something to sell?
 
-Searchable is the perfect starting point for Agentic AI. 
+You won't be starting from zero.
 
-It analyses your site, identifies visibility gaps across Google and AI search, and optimises your website for SEO and AI search.
+The product can wait, but the attention can't.
 
-Letting you focus on your business.
+----
 
-Start your 14-day free trial here: 
-https://lnkd.in/epgXyFmi
+📌 Want my free 30-day masterclass on getting attention and landing your first paid customer?
+
+Join The Expert OS (free) masterclass and join 200,000+ in my newsletter: https://buff.ly/arpZ2Om
+## Article 4
+The smartest people on earth are finding time away from their job to build something small.
+
+Something lean.
+Something profitable.
+Something they can earn with.
+
+A micro-business or side hustle or whatever the heck you want to call it.
+
+Because building something of your own is the truest way to become a better person.
+
+There's power in building.
+There is learning in building.
+There's failure, adversity and success.
+
+And in order to get ahead in this world, those are things you're going to need.
+
+Yes, you might fail.
+Yes, there will be days that suck.
+And yes, someone will make fun of you.
+
+Who cares?
+
+Do you want to sit around for the next decade and wonder when the robots are coming for your job?
+
+Or do you want to be proactive in taking control of your life, career and family?
+
+I know what my decision is.
+
+So go out there, get curious, learn about something incredibly useful and then come share it here on LinkedIn.
+
+A few years later, you'll have the leverage you need to completely own your life.
+
+-----
+
+📌 Want to learn how to market yourself here on LinkedIn like I do?
+
+Download my 2026 LinkedIn Growth Guide (free - how I grew to 830,000 followers) and join 200K+ in my newsletter: https://buff.ly/arpZ2Om
+
+------
+
+
+## Article 5
+Ok, so you got laid off. That's not good.
+
+And most people start panicking.
+
+They update the resume.
+They blast off 100+ applications.
+They wait to hear if someone is interested.
+
+These aren't bad moves, per se.
+
+But I'd encourage you to think about a different question while you're doing all of that:
+
+"What do I know right now that people would pay me for?"
+
+If you have skills, knowledge, and experience, you have something people want.
+
+So, do these three things if you're in a pinch:
+
+1. Write down every problem you've solved in the last 10 years.
+
+Not the different roles you had.
+The actual problems you solved at the business.
+
+"I helped improve sales team close rates by 15%." 
+"I taught people how to use Notion effectively."
+"I generated 10,000+ leads for a fintech company."
+
+The thing people paid your employer for...that's the thing you can sell directly to other people who need it.
+
+2. Find one person who has that problem right now and offer to help.
+
+Not 100 people.
+Not 10 people.
+Just one person.
+
+A former colleague, or someone in your network, or a stranger on LinkedIn who just posted about struggling with the exact thing you know how to fix.
+
+Go search! DM them. Offer a quick call. Solve it cheaply.
+
+That's your first proof-of-concept.
+
+3. Package what you did into something repeatable.
+
+Once you've helped one person, write down exactly what you did. 
+
+That's your first offer. 
+
+A 1-hour consultation. 
+A 4-week coaching sprint. 
+A simple PDF guide.
+
+It doesn't need to be fancy or have a damn logo. 
+
+It just needs to be clear: 
+
+"I help [specific person] do [specific thing] in [specific timeframe]." 
+
+That's it.
+
+These are the 3 steps to future-proofing yourself next time this happens.
+
+If this was helpful, feel free to reshare or save this post to revisit when you need it.
+
+----
+
+📌 Want my free 30-day masterclass on landing your first paid customer?
+
+Join The Expert OS (free) and join 200,000+ who get my newsletter: https://buff.ly/arpZ2Om
+## Article 6
+”SEO is dead.” How many times have you heard that...
+
+It isn’t, it’s just changed drastically:
+
+There's no excuse for neglecting your SEO. 
+Google still handles 8 billion search queries per day. 
+
+If you want to rank in ChatGPT, Perplexity, Google AI Overviews, etc, 
+You need to have AEO and GEO as part of your strategy as well. 
+
+(If you're looking for immediate AEO suggestions... 
+We built a free AI Agent at Searchable you can experiment with for that: https://lnkd.in/gVwCJJDX) 
+
+If you're not optimising for AI Search now, while it's still an advantage, 
+You could lose more revenue than you think. 
+
+Here's how to build a winning AEO strategy in 2026:
+
+1. Understand How AI Engines Find You
+
+AI models like ChatGPT, Perplexity, and Claude pull from three sources:
+
+- Training data 
+- Live web crawls 
+- Trusted sources 
+
+2. Fix Your Technical Foundation
+
+Here's the technical checklist:
+
+✓ Create/optimise llms.txt to guide AI crawlers
+✓ Configure robots.txt to allow GPTBot, ClaudeBot, PerplexityBot
+✓ Fix crawlability issues (no broken links)
+✓ Optimise page load speed by compressing images
+✓ Ensure mobile responsiveness by testing on mobile devices
+✓ Implement structured data (schema markup)
+✓ Set up XML sitemaps for all important pages
+✓ Configure HTTP headers properly
+
+If AI can't crawl your site, it can't cite you.
+
+3. Structure Your Content For Direct Answers
+
+AI engines favour content that directly answers questions.
+
+- Write in Q&A format. 
+- Use clear headings. 
+- Answer the question in the first paragraph.
+- Think like a search query: "What is [X]?" "How do I [Y]?" "Best [Z] for [A]?"
+
+4. Implement Schema Markup
+
+Schema markup speaks directly to search engines and AI crawlers. 
+
+For e-commerce: Product schema 
+For blogs: Article schema 
+For local businesses: LocalBusiness schema 
+
+5. Build Citation Authority
+
+AI models cite sources they've seen referenced repeatedly.
+
+That means:
+
+- Getting featured in industry roundups and "best of" guides
+- Earning mentions on high-authority sites. 
+
+The more credible citations, the more AI trusts you.
+
+6. Track And Iterate
+
+Here's what to monitor:
+
+- Brand mentions across AI platforms
+- Which prompts surface your brand
+- Competitor citations 
+- Content freshness
+
+There is a window open now to get ahead of AI search. 
+But you have to be ready to accept and act on these changes. 
+
+I know firsthand how exhausting it can be to shift gears mid-build. 
+
+That was really the motivation behind building Searchable. 
+
+We wanted a tool that could optimise for AEO/GEO autonomously. 
+
+Right now, you can try Searchable's free AI Agent: https://lnkd.in/gVwCJJDX
+
+Ask it any question about SEO, AEO, or GEO. It'll answer, in detail. 
+
+Hope you find it useful !
+
+Have you started pivoting for AI Search? 
+Comment below with your thoughts. 
+
+♻️ Save this for later and repost to help people get ahead of the curve.
+And follow Chris Donnelly for more on AI search.
+## Article 7
+If you want to start a business, you need to know the rules.
+
+These are 15 KPIs every Founder should know: 
+
+Follower growth can boost confidence and visibility. 
+
+But those types of metrics don't drive sustainable growth and profitability. 
+Without tracking the right KPIs, it's impossible to grow your business. 
+
+That's why I've combined the top 15 into one cheat sheet. 
+
+You should save it if you're serious about scaling this year 👇
+
+But I'll give you a quick rundown here as well: 
+
+(See the cheat sheet for how to calculate each one) 
+
+1. Net Revenue Retention (NRR)
+
+Measures revenue kept after churn, contractions, and expansions.
+This is the north-star for SaaS/AI businesses.
+
+2. Customer Lifetime Value (LTV)
+
+Average revenue a customer generates over their relationship with you.
+Always paired with CAC to prove ROI of growth.
+
+3. Customer Acquisition Cost (CAC)
+
+Average spend required to win a new customer.
+Set budgets and check efficiency of growth.
+
+4. LTV to CAC Ratio
+
+Compares lifetime value of a customer to acquisition cost.
+Validate sustainable growth. Rule of thumb: >3 is strong.
+
+5. Monthly Active Users (MAU)
+
+Number of unique active users in a month.
+Measure adoption and stickiness.
+
+6. Churn Rate 
+
+Number of customers or revenue lost in a period. 
+Track retention. Rising churn = weak product-market fit.
+
+7. Burn Multiple 
+
+Cash burned for every $1 in new ARR. 
+Use it during fundraising and growth phases. 
+
+8. EBITDA 
+
+Earnings before interest, tax, depreciation, amortisation. 
+Measure profitability at scale.
+
+9. Operating Cash Flow 
+
+Net cash from operating activities. 
+Confirm the business can fund itself.
+
+10. Customer Retention Rate 
+
+Percentage of customers who continue to buy from you over a set period. 
+Measure loyalty and product-market fit.
+
+11. Revenue Growth Rate 
+
+Percentage increase in revenue over a given period. 
+Show business momentum and scalability.
+
+12. AI Search Visibility 
+
+Share of prompts where your brand/product is surfaced in AI answers. 
+Measure discoverability in AI-led search.
+
+13. Runway (Cash Runway) 
+
+How many months your business can operate before running out of cash. 
+Balance growth vs. cash preservation.
+
+14. Experiment Velocity 
+
+Number of product, content, or GTM experiments shipped. 
+Track speed of iteration and learning.
+
+15. Gross Margin 
+
+Profitability after direct costs, including AI infra. 
+Prove scalability and efficiency to investors.
+
+Social media is useful for many things. 
+
+But it tells you very little about the long-term health of your business. 
+
+These are the metrics that matter if you want to scale. 
+
+What are the primary KPIs you're tracking in your business? 
+Leave a comment below. 
 
 --
 
@@ -293,471 +534,281 @@ https://lnkd.in/epgXyFmi
 2. Like the post
 3. Repost to your network
 4. Subscribe to: https://lnkd.in/eUTCQTWb
-## Article 4
-Agentic AI is not “ChatGPT with extra steps.” 
-
-Here's how to explain it to your leadership team: 
-
-ChatGPT can perform complex tasks. 
-
-But Agentic AI is an elevated experience. 
-
-Here are the 7 layers it uses to build real systems: 
-
-1. Machine Learning 
-
-Identify data patterns and improve performance.
-
-→ Supervised learning for labelled data predictions
-→ Unsupervised learning for pattern discovery
-→ Reinforcement learning for optimal decision-making
-→ Feature extraction and pattern recognition
-→ Model training, evaluation, and optimisation
-
-Tools: AWS SageMaker, Google Vertex AI, Azure ML
-
-2. Large Language Models (LLMs)
-
-Comprehend natural language and process multiple inputs.
-
-→ Natural language understanding and reasoning
-→ Tokenisation and embeddings for text processing
-→ Multimodal input handling (text, image, audio)
-→ Pre-training on massive datasets
-→ Fine-tuning, adapters, and prompt engineering
-→ Extended context windows for long conversations
-
-Tools: OpenAI GPT, Anthropic Claude, Google Gemini
-
-3. Generative AI 
-
-Generate new content across multimedia. 
-
-→ Text and code generation from prompts
-→ Image and video synthesis
-→ Speech recognition (ASR) and text-to-speech (TTS)
-→ Retrieval-augmented generation (RAG) for accuracy
-→ Structured output generation with validation
-
-Tools: ChatGPT, Midjourney, Runway, ElevenLabs
-
-4. AI Agents 
-
-Plan tasks and execute autonomously.
-
-→ Task planning and decomposition
-→ Tool use and function calling
-→ API execution and integration
-→ Memory and context management
-→ Autonomous execution with error handling
-→ State persistence across sessions
-
-Tools: LangChain, AutoGPT, CrewAI
-
-5. Agentic Systems 
-
-AI agents working together with specialised roles.
-
-→ Multi-agent collaboration and specialisation
-→ Inter-agent communication protocols
-→ Workflow orchestration and task routing
-→ Shared state coordination
-→ Failure recovery and parallel execution
-
-Tools: Microsoft AutoGen, LangGraph, Semantic Kernel
-
-6. Agentic AI 
-
-Sets goals and adapts behaviour.
-
-→ Goal setting and decomposition
-→ Goal chaining for complex outcomes
-→ Long-term autonomous operation
-→ Dynamic decision-making with feedback loops
-→ Self-improvement and adaptive behaviour
-
-Tools: Custom implementations, research frameworks
-
-7. Governance, Safety & Control
-
-Ensure AI safe, transparent operations. 
-
-→ Human-in-the-loop oversight and approval
-→ Guardrails and operational constraints
-→ Observability, tracing, and audit logs
-→ Risk management and compliance controls
-→ Rollbacks, overrides, and cost controls
-
-Tools: LangSmith, Weights & Biases, custom monitoring
-
-For Searchable, we needed multi-agent workflows to build out our original product. 
-
-That's not possible with an LLM alone.
-
-Agentic AI is the future of building businesses faster and smarter. 
-
-Start your 14-day free trial today: 
-https://lnkd.in/epgXyFmi
-
-♻️ Repost to share these insights with your audience.
-And follow Chris Donnelly for more on AI and business building.
-## Article 5
-OpenAI lost 22% market share in 1 year.
-
-Has ChatGPT ended as quickly as it started? 
-
-Short answer: No. But this does signal a massive shift.
-
-A couple years ago, if someone said "AI," they meant ChatGPT.
-
-Now, we're watching that change in real time. 
-
-People are starting to realise that ChatGPT isn't the only option.
-
-Of course, it's still a great all-rounder.
-
-It does content, research, automation and multimodal work pretty well.
-
-But if there's a better specialised tool, why choose a general one? 
-
-Gemini is getting seriously good, especially for multimodal work. 
-
-If you're working across documents, data, images, and Google Workspace,
-Gemini is really the obvious choice.
-
-Plus, Google's distribution advantage is massive, 
-So it gives billions of users built-in access.
-
-If you need clean, structured writing or production-level code, 
-Claude is the clear winner.
-
-We used it exclusively to build Searchable, and the results were outstanding. 
-
-We hit $83k MRR in just 1 month... 
-
-Claude is noticeably better than ChatGPT for these types of tasks. 
-Once people try it, they won't go back.
-
-Perplexity dominates research with transparent sources and clear citations. 
-
-It's the go-to for anyone who needs reliable information quickly.
-
-And it's changing the face of research as we know it. 
-
-A couple years ago, you needed to optimise for Google and maybe thought about ChatGPT.
-Now, your customers are searching across multiple AI platforms.
-
-This is why AEO (Answer Engine Optimisation) and GEO (Generative Engine Optimisation) matter now.
-
-Ranking in Google won't be enough to secure visibility in 2026. 
-Nor only being cited in ChatGPT, as it turns out. 
-
-Different models pull from different sources. 
-
-You need to be optimised for all of them.
-
-Which AI do you use most? And for what?
-Leave a comment below. 
-
-We built Searchable for shifts just like this.
-
-It's an autonomous SEO & AEO Growth Engineer that analyses and optimises your website for traditional search and AI search.
-
-Not just ChatGPT, but all LLMs. 
-
-Click here to learn more: 
-https://lnkd.in/epgXyFmi
-
-We have a 14-day free trial right now, so you can test it out. 
-
-♻️ Repost to share this with other founders and marketers.
-And follow Chris Donnelly for more on building businesses that scale.
-## Article 6
-Stop overspending for AI tools you do not need.
-
-Free alternatives already exist, but most people don't know about them.
-
-After 91 hours of researching and experimenting,
-
-I and my team have created a detailed guide of 40+ free AI tool alternatives to expensive AI tools.
-
-In the guide, we've covered:
-1. The best free AI tools for productivity, marketing, sales, creative tools, & more
-2. A step-by-step framework for selecting high-impact AI tools
-3. How to evaluate which tools fit your needs and test AI tools
-4. More than 40 paid vs free AI tool comparisons
-5. How to build your AI tool stack
-
-To get it for free,
-
-1) Like
-2) Comment "FREE"
-
-And I'll send it to you ASAP 
-
-♻️ Repost to get priority access
-## Article 7
-I’ve seen people waste months jumping between random AI hacks.
-
-So I’ve created this one all-in-one AI cheat sheet for you.
-
-To help you master everything important in one go.
-
-Let me be brutally honest.
-
-While you were writing one-line prompts, 
-AI pros were using the RTCROS framework to get better results.
-
-While you were guessing prompts, 
-They were using chain-of-thought prompting to make AI think step by step.
-
-While you were struggling with manual work, 
-They were automating entire workflows with tools you've never even heard of.
-
-Here's what the best AI users know that you don't:
-
-Prompting tips to get 10x better outputs:
-→ Zero-Shot gets instant results with no examples
-→ Few-Shot guides AI with just 2-3 samples
-→ Chain-of-Thought makes AI show its reasoning
-→ Persona-Based makes AI adopt expert roles
-→ Iterative Refinement keeps making outputs sharper
-
-Tools they're using daily:
-✅ Google Nano Banana Pro for stunning visuals in seconds
-✅ Cursor for writing code 
-✅ Zapier for automating tasks while they sleep
-✅ Consensus for research that used to take weeks
-✅ Gamma for presentations that look professionally designed
-
-The AI models dominating right now:
-→ ChatGPT-5.2 for adaptive multimodal thinking
-→ Claude Opus 4.6 for deep reasoning and complex tasks
-→ Grok 4.2 for live data and stronger creativity
-→ Gemini 3.1 Pro for long-context multi-step workflows
-→ Kimi K2 Thinking for hard analytical problems
-
-Some business use cases where AI helps:
-→ Digital operations getting fully automated
-→ Lead generation running on autopilot
-→ Sales cycles being cut in half
-→ Marketing campaigns launching without agencies
-→ Finance management handled without analysts
-
-The crazy part?
-All of this is learnable. 
-Right now. 
-For free.
-
-The gap between people who invest in learning AI daily and those who don't is growing.
-
-In the next 12 months, 
-The professionals who mastered AI prompting, tools, and workflows will be untouchable in their careers.
-
-The ones who didn't will be wondering what happened.
-Actually using it every day is where winners are made.
-
-Learn AI for free: https://lnkd.in/euYZeAdb 
-
-How much time per day do you invest in learning AI? 
-Be honest, and comment below 👇
 ## Article 8
-Most people will never master AI (properly). 
+SEO, AEO, and GEO aren't the same thing.
 
-But these 7 skills make it embarrassingly simple:
+Understanding the difference is essential: 
 
-Skill 1. Stay updated with AI News
-✦ Pick 2-3 creators who teach AI step-by-step.
-✦ One newsletter. Once a week. That's it.
-✦ Every article you read → try one thing. Now.
-✦ Start with my free guide here: how-to-ai.guide.
+The vast majority of businesses still optimise for SEO alone. 
+But that's only because they haven't realised what's changed.
 
-Skill 2. Pick one AI tool and master it
-✦ Pick one. Delete the rest from your bookmarks.
-✦ Use it for 30 days. Only that tool. Go deep.
-✦ Learn its Projects, memory, search & file uploads.
-✦ Copy my project guide: https://lnkd.in/exfaYnBQ
+They are now competing for attention with SEM, PPC, and AI Overviews...
 
-Skill 3. Set up your AI before you prompt
-✦ Create a folder: "AI Files."
-✦ First file: who you are, your tone, your audience.
-✦ Upload files → define task → define success.
-✦ My full setup guide: https://lnkd.in/exfaYnBQ
+They bet losing hands because they refuse to accept the game has changed. 
 
-Skill 4. Teach AI what you know
-✦ Prompt: "Ask me questions about my expertise."
-✦ Let it extract your rules, your no's, your audience.
-✦ Export into one .md file. Reuse it for months.
-✦ Copy my .md file prompt: https://lnkd.in/eF56s4i8
+Visibility is fragmenting across three layers: 
 
-Skill 5. Talk to AI like a colleague
-✦ Start with "Don't start yet. Ask me questions."
-✦ Read v1. Name all the things that are wrong.
-✦ Push harder: "Argue against this."
+SEO (Search Engine Optimisation)
+This is the model we've optimised for over the past 20 years.
 
-Skill 6. Ship before it's perfect
-✦ Build the rough draft with AI in 20 minutes.
-✦ Show it. Let people react to something real.
-✦ Sell what it becomes once they invest.
+AEO (Answer Engine Optimisation)
+Get your content extracted into answer boxes, on Google and in AI responses.
 
-Skill 7. Lead AI. Don't follow it
-✦ Split every task: what does AI do? What do I do?
-✦ Give AI the 80%. Keep the 20%.
-✦ If you can't spot the mistake, don't delegate it.
+GEO (Generative Engine Optimisation)
+Get cited in AI-generated responses on ChatGPT, Perplexity, Gemini, and Claude.
 
-The skills that matter in 2030:
+(Btw, If you don't know where you stand in any of these...
 
-The ones AI makes 10x more powerful.
-Or can't touch at all. The middle gets automated.
+We've created this free visibility report to analyse your current gaps: 
+https://lnkd.in/g6XApkfm)
 
-To learn more, read my free newsletter:
-https://lnkd.in/ebYZFYx3
+Here's what you need to know right now: 
 
-♻️ Repost if your network needs this wake-up call.
+➡️ SEO = Appearing in traditional search engines (Google, Bing)
+
+Focus: Rankings and click-through traffic
+Outcome: Your page appears in search results
+
+➡️ AEO = Content extracted into Google Snippets and short AI answers
+
+Focus: Featured snippets, answer boxes, "People Also Ask," quick AI responses
+Outcome: Your content is displayed as the answer (often zero-click)
+
+➡️ GEO = Cited in detailed AI responses on ChatGPT, Perplexity, Claude, etc. 
+
+Focus: Being referenced in longer, synthesised AI-generated content
+Outcome: Your brand/content is cited with attribution in AI answers
+
+It's not hard to get ahead of this in 2026. 
+There aren't that many brands optimising for all three. 
+
+But the ones that are, are already: 
+
+- Structuring content for extraction
+- Building authority for citations
+- And reinforcing traditional SEO foundations 
+
+To put it simply: 
+Acknowledge the game has changed, and start playing accordingly. 
+
+Do you understand the difference between SEO/AEO/GEO? 
+Comment below with your thoughts. 
+
+Searchable is the easiest possible way to prepare for all three at once. 
+
+And our free visibility report is a great starting point to see where you stand.
+
+Find your gaps here: https://lnkd.in/g6XApkfm
+
+You then have a 14-day free trial to plug those gaps !
+
+♻️ Repost this to help others optimise for all three layers.
+Follow Chris Donnelly for more on mastering AI search.
+
+
 ## Article 9
-How to start using AI today:
+The number one most ineffective phrase within business: 
 
-(even if you are not technical)
+”Let’s create a plan”. Here’s why: 
 
-✦ Level 1: Set up your AI
+An incorrect plan means poor execution and no growth.
 
-1. Pick one AI tool (my go-to is Claude)
-2. Stop using blank chats. Create a Project instead.
-3. Turn on Extended Thinking for better answers.
-4. Paste one sentence describing what you do.
-5. My full setup guide: https://lnkd.in/exfaYnBQ
+In order to approach your business with clarity... 
+Adopt these 3 types of planning 👇
 
-✦ Level 2: Make your first ugly draft
+Strategic Planning 🗺️
 
-1. Open your to-do list right now
-2. Pick the first task. Idea dump in AI as the 1st draft
-3. Read what comes back. Don't judge it
-4. Edit it yourself - AI did 80%, you do 20%
-5. Copy my prompts: https://lnkd.in/gXWUD4_c
+What is it:
+Sets the long-term vision and direction for the business.
 
-✦ Level 3: Build 3 Real Things
+Timeline:
+3-5 years out.
 
-1. Draft an email you've been avoiding
-2. Summarize a doc you don't have time to read
-3. Ask AI to build a plan for your next project
-4. Save the prompts that worked
-5. Copy my exact workflow: https://lnkd.in/grsGmrak
+Use case:
+Deciding to expand into a new market.
+Choosing to build a product vs acquire one.
+Planning a fundraise or an exit.
 
-✦ Level 4: Ship Something & Get Feedback
+Suited to:
+CEOs, Founders, Co-Founders, Board Members.
 
-1. Take your best AI draft and show it to someone
-2. Don't ask for permission. Show the finished thing
-3. Ask them: "What would you change?"
-4. Feed the feedback into AI for an improved version
-5. To get better with AI: https://lnkd.in/grsGmrak
+Top tips:
+Keep it to 3 priorities max.
+Decide what you WON'T do.
+Revisit it annually.
 
-I wrote a full guide on how to use AI the right way.
-Access it here: https://lnkd.in/grsGmrak
+Common errors:
+Setting goals so vague they could mean anything.
+Avoiding the hard trade-offs.
+Trying to go after 5 markets at once and winning none.
+
+Tactical Planning 🔀
+
+What is it:
+Turns the strategy into specific initiatives and projects.
+
+Timeline:
+1-3 years ahead.
+
+Use case:
+Launching a European sales team to support expansion.
+Hiring 10 engineers over 6 months to ship a new product.
+Running a paid beta programme for a new features.
+
+Suited to:
+Head of Departments, VPs, Senior Managers, COOs.
+
+Top tips:
+Assign one owner per project.
+Set quarterly checkpoints.
+Kill projects that aren't working.
+
+Common errors:
+Taking on too many initiatives at once.
+Building plans that sound good but have no clear owner.
+Spending 3 months planning and 1 month executing.
+
+Operational Planning ⚙️
+
+What is it:
+Daily and weekly execution of tasks and processes.
+
+Timeline:
+Days to 12 months.
+
+Use case:
+Weekly content publishing schedule.
+Daily sales outreach targets and pipeline reviews.
+Monthly reporting cadence.
+
+Suited to:
+Team Leads, Managers, Project Managers, Individual Contributors.
+
+Top tips:
+Build SOPs for anything done more than twice.
+Track the 2-3 KPIs that actually matter.
+Keep plans realistic.
+
+Common errors:
+Confusing being busy with making progress.
+Losing sight of why you're doing the work.
+Overloading teams with tasks.
+
+I see many teams blending all three and lack clarity to progress.
+
+When you separate it into these three approaches, it's a bit of a progress unlock to be honest.
+
+Give your team the clarity they need to grow !
+
+Anyway I'm curious to hear your experience with planning in your business...
+
+Is it something you or your team typically struggle with?
+Let me know and I'll see if I can provide guidance.
+
+- - - -
+
+📌 If you want a high-res PDF of this sheet:
+
+1. Follow Chris Donnelly.
+2. Like the post.
+3. Repost to your network.
+4. Subscribe to: https://lnkd.in/eUTCQTWb
 ## Article 10
-Agentic AI is not “ChatGPT with extra steps.” 
+SEO was never "easy"... but it was simpler. 
 
-Here's how to explain it to your leadership team: 
+Then the behavioural shift happened that you cannot ignore.
 
-ChatGPT can perform complex tasks. 
+And now SEO is not just about Google anymore. 
 
-But Agentic AI is an elevated experience. 
+It's expanded to LLMs and AI Overviews on Google. 
 
-Here are the 7 layers it uses to build real systems: 
+You might not even know if you're visible in these AI responses or not...
 
-1. Machine Learning 
+(Btw, Searchable has a free tool that checks your visibility and gives you a full report: https://lnkd.in/g6XApkfm)
 
-Identify data patterns and improve performance.
+ChatGPT processes 2.5 billion searches daily.
 
-→ Supervised learning for labelled data predictions
-→ Unsupervised learning for pattern discovery
-→ Reinforcement learning for optimal decision-making
-→ Feature extraction and pattern recognition
-→ Model training, evaluation, and optimisation
+And a good chunk of those are going to determine purchases...
 
-Tools: AWS SageMaker, Google Vertex AI, Azure ML
+Businesses are still in denial about it, but I suggest you don't be. 
 
-2. Large Language Models (LLMs)
+Here's what you need to know 👇
 
-Comprehend natural language and process multiple inputs.
+1️⃣ There are 3 types of search visibility: 
 
-→ Natural language understanding and reasoning
-→ Tokenisation and embeddings for text processing
-→ Multimodal input handling (text, image, audio)
-→ Pre-training on massive datasets
-→ Fine-tuning, adapters, and prompt engineering
-→ Extended context windows for long conversations
+SEO (Search Engine Optimisation)
+Outcome: You rank higher on Google, so more people find your website.
 
-Tools: OpenAI GPT, Anthropic Claude, Google Gemini
+AEO (Answer Engine Optimisation)
+Outcome: You become the direct answer Google gives.
 
-3. Generative AI 
+GEO (Generative Engine Optimisation)
+Outcome: AI tools like ChatGPT, Perplexity, and Gemini cite your brand.
 
-Generate new content across multimedia. 
+2️⃣ Old SEO is not the same as New SEO. 
 
-→ Text and code generation from prompts
-→ Image and video synthesis
-→ Speech recognition (ASR) and text-to-speech (TTS)
-→ Retrieval-augmented generation (RAG) for accuracy
-→ Structured output generation with validation
+Old SEO focused on:
 
-Tools: ChatGPT, Midjourney, Runway, ElevenLabs
+- Keyword density and exact match phrases
+- Backlinks at volume (quality was secondary)
+- Page rank and domain authority
+- Getting clicks to your website
 
-4. AI Agents 
+New SEO focuses on:
 
-Plan tasks and execute autonomously.
+- Natural language and question-based content
+- Authoritative citations from trusted sources
+- Entity recognition and schema markup
+- Being cited before the click happens
 
-→ Task planning and decomposition
-→ Tool use and function calling
-→ API execution and integration
-→ Memory and context management
-→ Autonomous execution with error handling
-→ State persistence across sessions
+3️⃣ You need to be found inside LLMs. 
 
-Tools: LangChain, AutoGPT, CrewAI
+There are 4 levels to this.
 
-5. Agentic Systems 
+Level 1: Crawlable
+AI can access your website.
 
-AI agents working together with specialised roles.
+- AI crawlers are not blocked in robots.txt
+- Site loads fast, clean HTML, updated sitemaps
+- But being crawlable doesn't mean being visible
 
-→ Multi-agent collaboration and specialisation
-→ Inter-agent communication protocols
-→ Workflow orchestration and task routing
-→ Shared state coordination
-→ Failure recovery and parallel execution
+Level 2: Understandable
+AI can make sense of your content.
 
-Tools: Microsoft AutoGen, LangGraph, Semantic Kernel
+- Schema markup implemented 
+- Clear headings, Q&A formatting, short paragraphs
+- Answer-first structure so AI can extract what it needs
 
-6. Agentic AI 
+Level 3: Trustworthy
+AI recognises you as a credible source.
 
-Sets goals and adapts behaviour.
+- Backlinks and citations from high-authority domains
+- Real author bios with visible credentials on every page
+- Wikipedia, Wikidata, and Google Knowledge Panel claimed
 
-→ Goal setting and decomposition
-→ Goal chaining for complex outcomes
-→ Long-term autonomous operation
-→ Dynamic decision-making with feedback loops
-→ Self-improvement and adaptive behaviour
+Level 4: Citation-Worthy
+AI actively recommends and cites your brand.
 
-Tools: Custom implementations, research frameworks
+- Original research and proprietary data
+- Content that answers specific questions 
+- Recently updated and fact-checked regularly
 
-7. Governance, Safety & Control
+When we built Searchable, we implemented all this knowledge into the product to help businesses rank inside LLMs 
+(Without working harder)...
 
-Ensure AI safe, transparent operations. 
+And I'm thrilled with the results so far: 
 
-→ Human-in-the-loop oversight and approval
-→ Guardrails and operational constraints
-→ Observability, tracing, and audit logs
-→ Risk management and compliance controls
-→ Rollbacks, overrides, and cost controls
+£1 million turnover in 60 days
+700+ paying customers
+Winning clients daily from legacy SEO competitors.
 
-Tools: LangSmith, Weights & Biases, custom monitoring
+It's completely automated to find gaps and fix them autonomously.
 
-For Searchable, we needed multi-agent workflows to build out our original product. 
+Which you can find with our free AI Visibility Report: https://lnkd.in/g6XApkfm
 
-That's not possible with an LLM alone.
+Has your business started optimising for the new SEO? 
 
-Agentic AI is the future of building businesses faster and smarter. 
-
-Start your 14-day free trial today: 
-https://lnkd.in/epgXyFmi
-
+💾 Save and Repost to share this guide with your network. 
+And follow Chris Donnelly for more on SEO/AEO/GEO.
 ♻️ Repost to share these insights with your audience.
 And follow Chris Donnelly for more on AI and business building.
