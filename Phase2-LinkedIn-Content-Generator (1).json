@@ -1,0 +1,509 @@
+{
+  "name": "Phase2-LinkedIn-Content-Generator",
+  "nodes": [
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "get",
+        "owner": {
+          "__rl": true,
+          "value": "wyzhao0374",
+          "mode": "name"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "Econ7055",
+          "mode": "list",
+          "cachedResultName": "Econ7055",
+          "cachedResultUrl": "https://github.com/wyzhao0374/Econ7055"
+        },
+        "filePath": "=style-templates/linkedin-ai-technology-2026-02-03.md",
+        "additionalParameters": {}
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        624,
+        16
+      ],
+      "id": "0013ba98-e3bf-4606-a114-b150b3b38c74",
+      "name": "Get a file",
+      "webhookId": "ec92f02c-f9a0-40a0-8bfd-ff26c5ba78e1",
+      "credentials": {
+        "githubApi": {
+          "id": "nRJZPDYRdiWrfo42",
+          "name": "GitHub account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// VentureBeat AI新闻（HTTP抓取随机选取）\nconst articleTitle = $('Code in JavaScript').first().json.title || '';\nconst articleSummary = $('Code in JavaScript').first().json.contentSnippet || '';\n\n// LinkedIn风格模板（GitHub文件）\nconst linkedinStyle = $('Get a file').first().json.data || '';\n\nconst prompt = `You are a LinkedIn writer who writes exactly like Chris Donnelly.\n\nStudy these real LinkedIn posts carefully and copy the exact voice, rhythm and structure:\n${linkedinStyle}\n\nNow write a new post based on this Bloomberg news:\nTitle: ${articleTitle}\nSummary: ${articleSummary}\n\nRULES YOU MUST FOLLOW:\n\nOpening (1 line only):\n- Maximum 6 words\n- Must be a bold claim, uncomfortable truth, or surprising fact\n- Examples of good openings:\n  \"Goldman just proved everyone wrong.\"\n  \"AI won't save your business.\"\n  \"Most companies are wasting AI.\"\n\nBody (3-4 short paragraphs):\n- Maximum 2 sentences per paragraph\n- Each sentence on its own line\n- Use ONLY real facts from the Bloomberg article\n- No invented statistics\n- Include one personal opinion that sounds authentic\n- Conversational tone, like talking to a smart friend\n\nClosing:\n- One direct question to the reader\n- Then 3-4 hashtags on a new line\n\nDO NOT:\n- Use bullet points\n- Use these corporate words: \"seismic shift\", \"landscape\", \"nuanced\", \n  \"significant implications\", \"silver bullet\", \"implement\", \"leverage\",\n  \"paradigm\", \"ecosystem\", \"holistic\", \"synergy\"\n- Write long paragraphs\n- Invent statistics\n- Start sentences with \"I believe\" or \"I think\" - just state the opinion directly\n\nPERSONAL OPINION RULE:\n- Make it specific and slightly controversial\n- Bad: \"I think we need a better approach\"\n- Good: \"Most companies bought AI tools. Nobody trained their people to use them.\"\n\nOutput only the post. Nothing else.`;\n\nreturn [{\n  json: {\n    prompt: prompt,\n    topic: articleTitle,\n    category: 'AI & Economics'\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        832,
+        16
+      ],
+      "id": "1b9fc891-22da-46c1-9a84-d6427917e9a7",
+      "name": "Build Content Generation Prompt"
+    },
+    {
+      "parameters": {
+        "jsCode": "const formData = $('Code in JavaScript').first().json;\nconst topic = formData.title || \"AI Technology\";\nlet aiContent = items[0].json.choices[0].message.content;\n\n// 1. 清洗内容（只保留正文）\nif (aiContent.includes(\"**\")) {\n    aiContent = \"**\" + aiContent.split(\"**\").slice(1).join(\"**\");\n}\naiContent = aiContent.split(\"By creating high-quality\")[0].trim();\n\n// 2. 生成【唯一】文件名：日期 + 毫秒级时间戳\nconst date = new Date().toISOString().split('T')[0];\nconst timestamp = new Date().getTime(); // 加入毫秒戳防止重复\nconst safeTopic = topic.toLowerCase().replace(/[^a-z0-9]/g, '-').substring(0, 10);\nconst fileName = `content-drafts/${date}-${safeTopic}-${timestamp}.md`;\n\nreturn {\n  filename: fileName,\n  content: aiContent,\n  commit_message: `AI Draft: ${topic}`,\n  topic: topic  // ← 加这一行\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1264,
+        16
+      ],
+      "id": "6a9d180e-f3f2-4add-ba88-3c882909eaa8",
+      "name": "Format Generated Content"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.groq.com/openai/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={ \"model\": \"llama-3.3-70b-versatile\", \"messages\": [ { \"role\": \"user\", \"content\": {{ JSON.stringify($json.prompt) }} } ] }",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        1056,
+        16
+      ],
+      "id": "645dae1f-645d-492e-9517-f9c119567c92",
+      "name": "Groq Content Generator",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "FmgjUDUxDUz4UABM",
+          "name": "Header Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "owner": {
+          "__rl": true,
+          "value": "wyzhao0374",
+          "mode": "name"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "Econ7055",
+          "mode": "list",
+          "cachedResultName": "Econ7055",
+          "cachedResultUrl": "https://github.com/wyzhao0374/Econ7055"
+        },
+        "filePath": "={{ $('Build Approval Email').item.json.github_file_path }}",
+        "fileContent": "={{ $('Build Approval Email').item.json.github_content }}",
+        "commitMessage": "=Upload post: {{ $('Format Generated Content').item.json.filename }}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        2864,
+        32
+      ],
+      "id": "3696ee98-8a09-4cd2-bd45-34c3d48619c4",
+      "name": "Create a file",
+      "webhookId": "4f43fc72-d916-40b0-b4cb-b620db0db1a2",
+      "credentials": {
+        "githubApi": {
+          "id": "nRJZPDYRdiWrfo42",
+          "name": "GitHub account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// 1. 直接按节点名称获取数据，不依赖 $input\nconst contentData = $('Format Generated Content').item.json;\n// 2. 逐个字段检查，找到实际有内容的字段\nconst content = contentData.safeContent \n  || contentData.github_content \n  || contentData.content \n  || 'No Content';\nconst topic = contentData.topic\n  || contentData.safeTopic \n  || contentData.email_subject \n  || 'Untitled Topic';\n// 3. 获取图片 URL（兼容 Stable Horde 和 Pollinations）\nlet imageUrl = '';\ntry {\n  imageUrl = $('Get Image Result').item.json.generations?.[0]?.img || '';\n} catch(e) {\n  imageUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(topic + ', professional LinkedIn illustration, business style, no text')}?width=512&height=512&nologo=true`;\n}\n// 4. 文件路径（加时间戳避免重复）\nconst rawTopic = contentData.safeTopic || topic;\nconst timestamp = Date.now();\nconst fileName = `post_${rawTopic.replace(/[^\\w]/g, '_')}_${timestamp}.md`;\n// 5. 构造邮件 HTML\nconst emailHtml = `\n  <h2 style=\"color:#0a66c2;\">LinkedIn 内容审批</h2>\n  <hr>\n  <h3>话题：${topic}</h3>\n  <hr>\n  <div style=\"background:#f5f5f5; padding:16px; border-radius:8px;\">\n    <p style=\"white-space:pre-wrap;\">${content}</p>\n  </div>\n  <br>\n  <p><strong>Generated Image:</strong></p>\n  <img src=\"${imageUrl}\" style=\"max-width:600px; width:100%; border-radius:8px;\" />\n  <br>\n  <p style=\"font-size:12px; color:#666;\">Image URL: <a href=\"${imageUrl}\">${imageUrl}</a></p>\n`;\n// 6. 返回所有字段\nreturn [{\n  json: {\n    email_subject: `【项目审批】话题：${topic}`,\n    email_html: emailHtml,\n    github_file_path: `posts/${fileName}`,\n    github_content: `${content}\\n\\n---\\n\\n![Generated Image](${imageUrl})\\n\\nImage URL: ${imageUrl}`,\n    safeTopic: topic,\n    safeContent: content,\n    imageUrl: imageUrl\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2304,
+        16
+      ],
+      "id": "44ec6148-2f27-4bee-949d-21e3309000a9",
+      "name": "Build Approval Email"
+    },
+    {
+      "parameters": {
+        "operation": "sendAndWait",
+        "fromEmail": "wyzhao0374@gmail.com",
+        "toEmail": "wyzhao0374@gmail.com",
+        "subject": "={{ $json.email_subject }}",
+        "message": "={{ $json.email_html }}",
+        "approvalOptions": {
+          "values": {
+            "approvalType": "double"
+          }
+        },
+        "options": {
+          "limitWaitTime": {
+            "values": {
+              "resumeAmount": 24
+            }
+          },
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        2512,
+        16
+      ],
+      "id": "15288059-3088-41c6-bde8-8de330810ec4",
+      "name": "SendAndWait email",
+      "webhookId": "b6988890-a1d4-43c5-80b5-79cb25574d29",
+      "credentials": {
+        "smtp": {
+          "id": "Ert7axDKA2NXBn9M",
+          "name": "Gmail SMTP"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "chooseBranch"
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        2688,
+        32
+      ],
+      "id": "5d4352c3-d9e4-4f70-8364-4ecc1e8a7da7",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 9
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        -240,
+        16
+      ],
+      "id": "0fc0a595-09cc-4b96-aa8b-69b0fb2e2855",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "url": "https://news.google.com/rss/search?q=artificial+intelligence&hl=en&gl=US&ceid=US:en",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "text"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        80,
+        16
+      ],
+      "id": "a1aadf8b-cfa8-49ab-a058-55d0a485c762",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "jsCode": "const xml = $input.first().json.data;\n\nconst items = [];\nconst itemRegex = /<item>([\\s\\S]*?)<\\/item>/g;\nlet match;\n\nwhile ((match = itemRegex.exec(xml)) !== null) {\n  const itemXml = match[1];\n  \n  const title = (itemXml.match(/<title><!\\[CDATA\\[(.*?)\\]\\]><\\/title>/) || \n                 itemXml.match(/<title>(.*?)<\\/title>/) || [])[1] || '';\n  \n  const link = (itemXml.match(/<link>(.*?)<\\/link>/) || [])[1] || '';\n  \n  const snippet = (itemXml.match(/<description><!\\[CDATA\\[(.*?)\\]\\]><\\/description>/) || \n                   itemXml.match(/<description>(.*?)<\\/description>/) || [])[1] || '';\n\n  // 过滤掉太短的文章\n  if (title && title.length > 20) {\n    items.push({ \n      title: title.replace(/ - .*$/, ''), // 去掉来源名称\n      link, \n      contentSnippet: snippet.substring(0, 500) \n    });\n  }\n}\n\n// 从前20篇里随机选，避免总选同一篇\nconst pool = items.slice(0, 20);\nconst randomIndex = Math.floor(Math.random() * pool.length);\nconst selected = pool[randomIndex] || pool[0];\n\nreturn [{ json: selected }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        416,
+        16
+      ],
+      "id": "584d8724-46b5-4a29-9ea8-b7a7cdc81b87",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://stablehorde.net/api/v2/generate/async",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "apikey",
+              "value": "en94vFiWlCRjEIgEygzn3Q"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"prompt\": \"Professional LinkedIn illustration about {{ $('Format Generated Content').item.json.safeTopic }}, clean modern business style, no text, high quality\",\n  \"params\": {\n    \"steps\": 20,\n    \"width\": 512,\n    \"height\": 512,\n    \"n\": 1,\n    \"sampler_name\": \"k_euler\"\n  },\n  \"models\": [\"stable_diffusion\"],\n  \"r2\": true\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        1472,
+        16
+      ],
+      "id": "1f5981b7-5ebf-4166-a72f-74e5b3fa968c",
+      "name": "Submit Image Job",
+      "retryOnFail": true,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "amount": 30
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1680,
+        16
+      ],
+      "id": "d748b256-47d4-485c-82ea-26869d88c4c2",
+      "name": "Wait",
+      "webhookId": "fe1f6570-1f11-4599-8037-3d008665a990"
+    },
+    {
+      "parameters": {
+        "url": "=https://stablehorde.net/api/v2/generate/status/{{ $('Submit Image Job').item.json.id }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "en94vFiWlCRjEIgEygzn3Q"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        1888,
+        16
+      ],
+      "id": "b9d8782c-e345-43bb-ac17-3b67bb0a81c5",
+      "name": "Get Image Result"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "775bbe22-a1f6-4fc2-a088-67a7abc4096b",
+              "name": "imageUrl",
+              "value": "={{ $json.generations[0].img }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2096,
+        16
+      ],
+      "id": "436d9446-f8bc-44ac-ba6e-b424436696ce",
+      "name": "Extract Image URL"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Get a file": {
+      "main": [
+        [
+          {
+            "node": "Build Content Generation Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Content Generation Prompt": {
+      "main": [
+        [
+          {
+            "node": "Groq Content Generator",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format Generated Content": {
+      "main": [
+        [
+          {
+            "node": "Submit Image Job",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Groq Content Generator": {
+      "main": [
+        [
+          {
+            "node": "Format Generated Content",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Approval Email": {
+      "main": [
+        [
+          {
+            "node": "SendAndWait email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "SendAndWait email": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Create a file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Get a file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create a file": {
+      "main": [
+        []
+      ]
+    },
+    "Submit Image Job": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "Get Image Result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Image Result": {
+      "main": [
+        [
+          {
+            "node": "Extract Image URL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Image URL": {
+      "main": [
+        [
+          {
+            "node": "Build Approval Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "24deb4b8-d98e-4056-877f-b181a127f920",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "f2b35af25d821266634f09eb50bea4da9f3e8d09f49a5c0ae93bb720d1a81e65"
+  },
+  "id": "Mt9ZQ7aVXIpHC9u7fT9wb",
+  "tags": []
+}

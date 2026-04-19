@@ -1,0 +1,271 @@
+{
+  "name": "Instagram",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "ff94d68e-9309-4e43-8904-d8d0fe347e52",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "url": "https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=travel&limit=10&sort=desc&fields=title,selftext,score,url",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        208,
+        0
+      ],
+      "id": "102dab0d-23ef-44af-818c-d18107cd38cf",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "jsCode": "const posts = $input.all()[0].json.data;\n\n// 随机选一条，不总是取第一条\nconst randomIndex = Math.floor(Math.random() * Math.min(posts.length, 5));\nconst selectedPost = posts[randomIndex];\n\nreturn [{\n  json: {\n    topic: selectedPost.title,\n    raw_content: selectedPost.selftext || selectedPost.title,\n    source_url: selectedPost.url,\n    score: selectedPost.score\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        416,
+        0
+      ],
+      "id": "0295c7e4-c25a-45d9-bd9e-782b520f5be7",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "jsCode": "const response = $input.all()[0].json;\n\n// 兼容多种 n8n OpenAI 节点输出格式\nconst rawText = \n  response.content ||                          // Simplify Output 开启\n  response.message?.content ||                 // 部分版本\n  response.choices?.[0]?.message?.content ||   // 原始格式\n  response.text ||                             // 其他情况\n  JSON.stringify(response);                    // 兜底：把整体转成字符串\n\nconst topic = $('Code in JavaScript').item.json.topic;\n\n// 解析 OpenAI 返回的 JSON\nlet parsed;\ntry {\n  const cleaned = rawText\n    .replace(/```json\\n?/g, '')\n    .replace(/```\\n?/g, '')\n    .trim();\n  parsed = JSON.parse(cleaned);\n  \n  // 确保字段存在\n  if (!parsed.caption) throw new Error('no caption');\n  \n} catch (e) {\n  // 解析失败时把原文当 caption\n  parsed = { \n    caption: rawText, \n    hashtags: '', \n    imagePrompt: topic + ', travel photography, Instagram style' \n  };\n}\n\nfunction escapeHtml(text = '') {\n  return String(text)\n    .replace(/&/g, \"&amp;\")\n    .replace(/</g, \"&lt;\")\n    .replace(/>/g, \"&gt;\");\n}\n\nconst timestamp = Date.now();\nconst fileName = `post_${topic.replace(/[^\\w]/g, '_')}_${timestamp}.md`;\nconst fullContent = `${parsed.caption}\\n\\n${parsed.hashtags}`;\n\nreturn [{\n  json: {\n    caption: parsed.caption,\n    hashtags: parsed.hashtags,\n    imagePrompt: parsed.imagePrompt || topic,\n    safeContent: escapeHtml(fullContent),\n    safeTopic: escapeHtml(topic),\n    github_file_path: `posts/instagram/${fileName}`,\n    github_content: fullContent,\n    // 调试用，确认后可以删掉\n    debug_rawText: rawText\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        896,
+        0
+      ],
+      "id": "5d7aa3b7-31d3-415d-b698-4b04be9de462",
+      "name": "Format Generated Content"
+    },
+    {
+      "parameters": {
+        "jsCode": "const contentData = $('Format Generated Content').item.json;\nconst caption = contentData.caption || 'No Content';\nconst hashtags = contentData.hashtags || '';\nconst imagePrompt = contentData.imagePrompt || contentData.safeTopic || 'travel photography';\nconst topic = contentData.safeTopic || 'Untitled Topic';\n\nconst imageUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(imagePrompt + ', travel photography, beautiful landscape, Instagram style, vibrant colors, no text')}?width=512&height=512&nologo=true&model=flux`;\n\nconst timestamp = Date.now();\nconst fileName = `post_${topic.replace(/[^\\w]/g, '_')}_${timestamp}.md`;\n\nconst emailHtml = `\n  <h2 style=\"color:#e1306c;\">Instagram 内容审批</h2>\n  <hr>\n  <h3>话题：${topic}</h3>\n  <hr>\n  <div style=\"background:#f5f5f5; padding:16px; border-radius:8px;\">\n    <p style=\"white-space:pre-wrap;\">${caption}</p>\n    <p style=\"color:#888; font-size:13px;\">${hashtags}</p>\n  </div>\n  <br>\n  <p><strong>Generated Image:</strong></p>\n  <img src=\"${imageUrl}\" style=\"max-width:600px; width:100%; border-radius:8px;\" />\n`;\n\nreturn [{\n  json: {\n    email_subject: `【Instagram审批】话题：${topic}`,\n    email_html: emailHtml,\n    github_file_path: `posts/instagram/${fileName}`,\n    github_content: `${caption}\\n\\n${hashtags}\\n\\n---\\n\\n![Generated Image](${imageUrl})`,\n    safeTopic: topic,\n    safeContent: caption,\n    imageUrl: imageUrl\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1136,
+        0
+      ],
+      "id": "57696dd5-df44-4564-aeef-4a9c829de7db",
+      "name": "Build Approval Email"
+    },
+    {
+      "parameters": {
+        "operation": "sendAndWait",
+        "fromEmail": "wyzhao0374@gmail.com",
+        "toEmail": "wyzhao0374@gmail.com",
+        "subject": "={{ $json.email_subject }}",
+        "message": "={{ $json.email_html }}",
+        "approvalOptions": {
+          "values": {
+            "approvalType": "double"
+          }
+        },
+        "options": {
+          "limitWaitTime": {
+            "values": {
+              "resumeAmount": 24
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        1360,
+        0
+      ],
+      "id": "1882fba2-09a5-49bc-b83e-5ebc022a2c8c",
+      "name": "Send and Wait for Response",
+      "webhookId": "c2060c02-73bd-477c-9dd8-874e776ff97f",
+      "credentials": {
+        "smtp": {
+          "id": "Ert7axDKA2NXBn9M",
+          "name": "Gmail SMTP"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "owner": {
+          "__rl": true,
+          "value": "wyzhao0374",
+          "mode": "name"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "Econ7055",
+          "mode": "list",
+          "cachedResultName": "Econ7055",
+          "cachedResultUrl": "https://github.com/wyzhao0374/Econ7055"
+        },
+        "filePath": "={{ $('Build Approval Email').item.json.github_file_path }}",
+        "fileContent": "={{ $('Build Approval Email').item.json.github_content }}",
+        "commitMessage": "=Upload Instagram post: {{ $('Build Approval Email').item.json.safeTopic }}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        1584,
+        0
+      ],
+      "id": "52abbeae-ca4d-4193-a861-0974f2228b03",
+      "name": "Create a file",
+      "webhookId": "8f23d2d7-e8bd-4d18-ac50-5e124738ee4b",
+      "credentials": {
+        "githubApi": {
+          "id": "nRJZPDYRdiWrfo42",
+          "name": "GitHub account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.groq.com/openai/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer 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"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"llama-3.1-8b-instant\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are an Instagram travel content creator. Write engaging Instagram captions with emojis and relevant hashtags.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Write an Instagram caption based on this travel topic. Topic: {{ $('Code in JavaScript').item.json.topic }}. Write with an engaging opening line, 3-4 sentences, and 5-10 hashtags under 300 words.\"\n    }\n  ],\n  \"max_tokens\": 500\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        672,
+        0
+      ],
+      "id": "9bdb2c6a-5eb1-4014-b497-be00fc32490f",
+      "name": "Groq Content Generator",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "FmgjUDUxDUz4UABM",
+          "name": "Header Auth account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Groq Content Generator",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format Generated Content": {
+      "main": [
+        [
+          {
+            "node": "Build Approval Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Approval Email": {
+      "main": [
+        [
+          {
+            "node": "Send and Wait for Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send and Wait for Response": {
+      "main": [
+        [
+          {
+            "node": "Create a file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Groq Content Generator": {
+      "main": [
+        [
+          {
+            "node": "Format Generated Content",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "f6202147-e807-42e7-81c8-e1ef92d34bfe",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "f2b35af25d821266634f09eb50bea4da9f3e8d09f49a5c0ae93bb720d1a81e65"
+  },
+  "id": "mh6xjP804MEC63y_EbW7o",
+  "tags": []
+}
